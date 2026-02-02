@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Состав ПЦК | ПЦК Физико-математических дисциплин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ПЦК ФМД</h1>
+                        <p>Университетский колледж ОГУ</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="staff.html" class="active"><i class="fas fa-chalkboard-teacher"></i> Состав ПЦК</a></li>
+                        <li><a href="disciplines.html"><i class="fas fa-book"></i> Дисциплины</a></li>
+                        <li><a href="additional-edu.html"><i class="fas fa-graduation-cap"></i> Доп. образование</a></li>
+                        <li><a href="week.html"><i class="fas fa-calendar-week"></i> Неделя ПЦК</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="page-header">
+                <h1 class="page-title">Состав предметно-цикловой комиссии</h1>
+                <p class="page-subtitle">Профессионалы с высшей квалификацией и большим педагогическим опытом</p>
+            </div>
+            
+            <!-- Статистика -->
+            <div class="quick-stats">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>19</h3>
+                        <p>Преподавателей</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>85%</h3>
+                        <p>Высшая категория</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Кандидата наук</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>15+</h3>
+                        <p>Наград и грамот</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Поиск и фильтры -->
+            <div class="table-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="table-filter" placeholder="Поиск преподавателя...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="high">Высшая категория</button>
+                    <button class="filter-btn" data-filter="first">Первая категория</button>
+                </div>
+            </div>
+            
+            <!-- Таблица преподавателей -->
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>ФИО преподавателя</th>
+                            <th>Кураторство</th>
+                            <th>Категория</th>
+                            <th>Награды</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Преподаватель 1 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>1</td>
+                            <td>
+                                <div class="teacher-name">Т.В. Атяскина</div>
+                                <div class="teacher-degree">Кандидат педагогических наук</div>
+                            </td>
+                            <td>-</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №374, 31.05.2024 г</div>
+                            </td>
+                            <td>
+                                <ul class="awards-list">
+                                    <li>Почетная грамота Министерства образования и науки РФ, 2015г.</li>
+                                    <li>Почетная грамота Министерства образования Оренбургской области, 2022г.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <!-- Преподаватель 2 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>2</td>
+                            <td>
+                                <div class="teacher-name">О.И. Белицкая</div>
+                            </td>
+                            <td>23МТОР-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №215, 07.03.2025</div>
+                            </td>
+                            <td>
+                                <ul class="awards-list">
+                                    <li>Благодарственное письмо от депутата Оренбургского городского Совета А.Ю. Полякова «За значительные успехи в организации и совершенствовании учебного и воспитательного процессов», 2019</li>
+                                    <li>Почетная грамота УО администрации г. Оренбурга «За значительные успехи в обучении, воспитании и развитии подрастающего поколения, личный вклад в формирование интеллектуальной и нравственной личности обучающегося», 2021</li>
+                                    <li>Благодарственное письмо УО администрации г. Оренбурга «За работу в составе экспертной группы для проведения анализа контрольных срезов знаний обучающихся в 2020-2022 учебных годах», 2022</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <!-- Преподаватель 3 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>3</td>
+                            <td>
+                                <div class="teacher-name">М.В. Безрукова</div>
+                            </td>
+                            <td>21 МТОР-1, 23Э-4</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №1179 от 13.12.2023</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 4 -->
+                        <tr data-category="first" class="animate-on-scroll">
+                            <td>4</td>
+                            <td>
+                                <div class="teacher-name">А.А. Викторова</div>
+                            </td>
+                            <td>23ТМ-2<br>25 РЭУС-2</td>
+                            <td>
+                                <div class="category-badge category-first">Первая</div>
+                                <div class="category-date">Приказ №458 от 28.05.2025г</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 5 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>5</td>
+                            <td>
+                                <div class="teacher-name">Н.А. Викулова</div>
+                            </td>
+                            <td>25 ТЭОРП-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №466, 09.06.2021</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 6 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>6</td>
+                            <td>
+                                <div class="teacher-name">А.А. Гурьянов</div>
+                            </td>
+                            <td>22 Э-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №665 от 20.12.2024</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 7 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>7</td>
+                            <td>
+                                <div class="teacher-name">И.Ф. Дворнова</div>
+                            </td>
+                            <td>22ТОРРТ-3</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ № 458 от 28.05.2025 г</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 8 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>8</td>
+                            <td>
+                                <div class="teacher-name">М.Г. Денисова</div>
+                            </td>
+                            <td>25 ССА-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Данные уточняются</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 9 -->
+                        <tr data-category="first" class="animate-on-scroll">
+                            <td>9</td>
+                            <td>
+                                <div class="teacher-name">А.В. Зотова</div>
+                            </td>
+                            <td>23Э-1, 24Пл-2</td>
+                            <td>
+                                <div class="category-badge category-first">Первая</div>
+                                <div class="category-date">Приказ №458, 28.05.2025</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 10 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>10</td>
+                            <td>
+                                <div class="teacher-name">Ю.М. Каримова</div>
+                            </td>
+                            <td>24 ИСП-1</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №АК-23, 01.12.2021</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 11 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>11</td>
+                            <td>
+                                <div class="teacher-name">О.С. Кравцова</div>
+                            </td>
+                            <td>25 ИСП-3</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №1604, 28.12.2020</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 12 -->
+                        <tr data-category="first" class="animate-on-scroll">
+                            <td>12</td>
+                            <td>
+                                <div class="teacher-name">К.В. Кудашева</div>
+                            </td>
+                            <td>25 З-1</td>
+                            <td>
+                                <div class="category-badge category-first">Первая</div>
+                                <div class="category-date">Приказ №926, 18.12.2024 г.</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 13 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>13</td>
+                            <td>
+                                <div class="teacher-name">О.А. Лукерина</div>
+                            </td>
+                            <td>22ССА-2<br>24 ОИБ-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ № 566, 06.06.2023</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 14 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>14</td>
+                            <td>
+                                <div class="teacher-name">И.Н. Мещерякова</div>
+                                <div class="teacher-degree">Кандидат педагогических наук</div>
+                            </td>
+                            <td>22ИСП-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №389 от 19.05.2021</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 15 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>15</td>
+                            <td>
+                                <div class="teacher-name">Е.В. Сычева</div>
+                            </td>
+                            <td>23РЭУС-2</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Данные уточняются</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 16 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>16</td>
+                            <td>
+                                <div class="teacher-name">Н.В. Тесля</div>
+                            </td>
+                            <td>-</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ № 374 от 31.05.2024</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 17 -->
+                        <tr data-category="first" class="animate-on-scroll">
+                            <td>17</td>
+                            <td>
+                                <div class="teacher-name">О.С. Учускина</div>
+                            </td>
+                            <td>25 ЮР-1</td>
+                            <td>
+                                <div class="category-badge category-first">Первая</div>
+                                <div class="category-date">Приказ № 458 от 28.05.2025г</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 18 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>18</td>
+                            <td>
+                                <div class="teacher-name">И.С. Ходырева</div>
+                            </td>
+                            <td>23ПСО-1, 23ПСО-3</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ №40 от 21.01.2022</div>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        
+                        <!-- Преподаватель 19 -->
+                        <tr data-category="high" class="animate-on-scroll">
+                            <td>19</td>
+                            <td>
+                                <div class="teacher-name">Н.Ю. Чумакова</div>
+                            </td>
+                            <td>23РЭУС-3<br>25 РЭУС-1</td>
+                            <td>
+                                <div class="category-badge category-high">Высшая</div>
+                                <div class="category-date">Приказ № 01-21/885 МО ОО от 07.06.2023</div>
+                            </td>
+                            <td>
+                                <ul class="awards-list">
+                                    <li>Грамота отдела образования администрации Тюльганского района, 2020</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Дополнительная информация -->
+            <div class="additional-info">
+                <div class="info-card animate-on-scroll">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Статистика по категориям</h3>
+                    <p>Из 19 преподавателей ПЦК: 16 имеют высшую категорию (85%), 3 - первую категорию (15%).</p>
+                </div>
+                
+                <div class="info-card animate-on-scroll">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Научный потенциал</h3>
+                    <p>В составе комиссии работают 2 кандидата педагогических наук и несколько преподавателей, ведущих научно-исследовательскую работу.</p>
+                </div>
+                
+                <div class="info-card animate-on-scroll">
+                    <i class="fas fa-users"></i>
+                    <h3>Кураторская работа</h3>
+                    <p>Большинство преподавателей осуществляют кураторство студенческих групп, обеспечивая комплексный подход к образованию.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>ПЦК ФМД</h3>
+                        <p>Предметно-цикловая комиссия<br>Физико-математических дисциплин</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Страницы</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="staff.html">Состав ПЦК</a></li>
+                        <li><a href="disciplines.html">Дисциплины</a></li>
+                        <li><a href="additional-edu.html">Доп. образование</a></li>
+                        <li><a href="week.html">Неделя ПЦК</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> пр-т Победы, 13, Университетский колледж ОГУ</p>
+                    <p><i class="fas fa-phone"></i> +7 (3532) 77-88-99</p>
+                    <p><i class="fas fa-envelope"></i> pck_physics_math@college.ogu.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ПЦК Физико-математических дисциплин Университетского колледжа ОГУ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

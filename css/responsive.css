@@ -1,0 +1,441 @@
+/* Адаптивные стили */
+
+/* Большие планшеты и маленькие десктопы (1024px - 1280px) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+    
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .header-wrapper {
+        gap: 20px;
+    }
+    
+    .nav-list {
+        gap: 20px;
+    }
+    
+    .nav-list a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin: 0 auto 2.5rem;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .floating-elements {
+        height: 350px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .element {
+        width: 170px;
+        padding: 25px;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .mission-cards,
+    .disciplines-grid,
+    .programs-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .teachers-slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .header-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .nav {
+        order: 3;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .header-controls {
+        margin-left: auto;
+    }
+}
+
+/* Большие смартфоны (576px - 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: var(--light);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        z-index: 999;
+        border-radius: 0 0 var(--radius) var(--radius);
+    }
+    
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-list a {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 150px 0 100px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    .mission-card,
+    .teacher-card,
+    .discipline-card,
+    .program-card,
+    .stat-card,
+    .info-card {
+        padding: 30px;
+    }
+    
+    .teachers-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .stat-item {
+        padding: 30px;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+    
+    .table-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    .filter-buttons {
+        justify-content: center;
+    }
+    
+    .additional-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .scroll-top-btn {
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Смартфоны (до 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.8rem;
+    }
+    
+    .hero {
+        padding: 130px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .floating-elements {
+        height: 300px;
+    }
+    
+    .element {
+        width: 140px;
+        padding: 20px;
+    }
+    
+    .element i {
+        font-size: 2.5rem;
+    }
+    
+    .element span {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .mission-cards,
+    .disciplines-grid,
+    .programs-container {
+        gap: 25px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .quick-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .teacher-avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-bottom {
+        font-size: 0.9rem;
+        padding-top: 30px;
+    }
+    
+    .table-responsive {
+        margin: 30px -20px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 20px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .events-table th,
+    .events-table td {
+        padding: 20px;
+    }
+    
+    .discipline-hours {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .header-controls {
+        gap: 15px;
+    }
+}
+
+/* Очень маленькие экраны (до 400px) */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .floating-elements {
+        height: 250px;
+    }
+    
+    .element {
+        width: 120px;
+        padding: 15px;
+    }
+    
+    .element i {
+        font-size: 2rem;
+    }
+    
+    .element span {
+        font-size: 0.9rem;
+    }
+    
+    .mission-card,
+    .teacher-card,
+    .discipline-card,
+    .program-card {
+        padding: 25px 20px;
+    }
+    
+    .stat-item {
+        padding: 25px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .btn {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Высокие экраны (минимальная высота) */
+@media (max-height: 700px) and (orientation: landscape) {
+    .hero {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .floating-elements {
+        height: 280px;
+    }
+    
+    .nav {
+        top: 80px;
+    }
+}
